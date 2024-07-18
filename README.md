@@ -73,6 +73,6 @@ export default defineConfig({
 <p>O UI achei no figma, para acessar, basta clicar no linke</p>
 
 Figma do projeto:
-<a style="padding: 5px; border-radius: 3px; border: none; background: #4646ac; color: white; font-weight: bold;" href="https://www.figma.com/design/D4hyfAUEa9qaapn9vdqdSk/Clicon---eCommerce-Marketplace-Website-Figma-Template-(Community)-(Community)?node-id=279-19819&t=iSgxYwVzL923emfh-0">
+<a target="_blank" style="padding: 5px; border-radius: 3px; border: none; background: #4646ac; color: white; font-weight: bold;" href="https://www.figma.com/design/D4hyfAUEa9qaapn9vdqdSk/Clicon---eCommerce-Marketplace-Website-Figma-Template-(Community)-(Community)?node-id=279-19819&t=iSgxYwVzL923emfh-0">
   Figma | UI
 </a>
