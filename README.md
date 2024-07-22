@@ -16,12 +16,6 @@ finalidade de exibir as minhas hard skills.</p>
   <img src="" alt="" />
 <div>
 
-### Video
-<div style="width: 300px; height: 200px;">
-  <video>
-  </video>
-<div>
-
 ### Como testar ?
 1º Clone o repositorio:
 ```bash 

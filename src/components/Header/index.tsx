@@ -1,10 +1,14 @@
 import { 
   CaretDown,
   FacebookLogo, 
+  Heart, 
   InstagramLogo, 
+  MagnifyingGlass, 
   PinterestLogo, 
   RedditLogo, 
+  ShoppingCart, 
   TwitchLogo, 
+  User, 
   YoutubeLogo 
 } from "phosphor-react";
 
@@ -12,6 +16,7 @@ import {
   ButtonIdioma,
   ButtonMoeda,
   ContainerHeaderRight,
+  ContentBaixo,
   ContentRight,
   ContentTop,
   DivisorContainer,
@@ -21,6 +26,7 @@ import {
 } from "./styles";
 
 import { ContainerBody } from "../../styles/global";
+import imgLogo from "./../../../public/Logo.svg";
 
 export function Header() {
   return (
@@ -56,18 +62,32 @@ export function Header() {
             <ContentRight>
               <ButtonIdioma>
                 <span>Eng</span>
-                <CaretDown />
+                <CaretDown size={16} />
               </ButtonIdioma>
 
               <ButtonMoeda>
                 <span>USD</span>
-                <CaretDown />
+                <CaretDown size={16} />
               </ButtonMoeda>
             </ContentRight>
           </ContainerHeaderRight>
         </ContentTop>
       </ContainerBody>
       <DivisorContainer />
+      <ContainerBody>
+        <ContentBaixo>
+          <img src={imgLogo} alt="Logo do ecommerce" />
+          <div className="search">
+            <input type="text" placeholder="Search for anything" />
+            <MagnifyingGlass size={16} className="icon" />
+          </div>
+          <div className="iconsUser">
+            <ShoppingCart className="icon" size={24} />
+            <Heart className="icon" size={24} />
+            <User className="icon" size={24} />
+          </div>
+        </ContentBaixo>
+      </ContainerBody>
     </HeaderContainer>
   );
 }

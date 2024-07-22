@@ -70,10 +70,52 @@ export const Button = styled.button`
   gap: .20rem;
 `;
 
-export const ButtonIdioma = styled(Button)`
+export const ButtonIdioma = styled(Button)``;
 
-`;
+export const ButtonMoeda = styled(Button)``;
 
-export const ButtonMoeda = styled(Button)`
 
+export const ContentBaixo = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+
+  img {
+    height: 3rem;
+    width: 11.0625rem;
+    margin: 1.25rem 0;
+  }
+
+  & .search {
+    background-color: ${(props) => props.theme["gray-00"]};
+    width: 40rem;
+    height: 3rem;
+    padding: 5px 15px;
+
+    display: flex;
+    align-items: center;
+    gap: .30rem;
+
+    & input {
+      flex: 1;
+      padding: .30rem;
+      border: none;
+    }
+
+    & .icon {
+      color: ${(props) => props.theme["gray-400"]};
+      cursor: pointer;
+    }
+  }
+
+  & .iconsUser {
+    display: flex;
+    align-items: center;
+    gap: .30rem;
+
+    & .icon {
+      cursor: pointer;
+    }
+  }
 `;
