@@ -1,5 +1,7 @@
 import styled, { createGlobalStyle } from 'styled-components';
 
+// estilos globais
+
 export const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
@@ -16,7 +18,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body, input, textarea, button {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 1rem;
   }

@@ -50,7 +50,7 @@ export const SeparatorIcon = styled.div`
   height: 1.75rem;
 
   color: red;
-  background: ${(props) => props.theme['gray-200']};
+  background: ${(props) => props.theme["gray-200"]};
 `;
 
 export const ContentRight = styled.div`
@@ -63,6 +63,11 @@ export const Button = styled.button`
   color: white;
   border: none;
   cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .20rem;
 `;
 
 export const ButtonIdioma = styled(Button)`
@@ -70,5 +75,5 @@ export const ButtonIdioma = styled(Button)`
 `;
 
 export const ButtonMoeda = styled(Button)`
-  
+
 `;

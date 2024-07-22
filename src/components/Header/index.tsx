@@ -1,4 +1,5 @@
 import { 
+  CaretDown,
   FacebookLogo, 
   InstagramLogo, 
   PinterestLogo, 
@@ -23,7 +24,7 @@ import { ContainerBody } from "../../styles/global";
 
 export function Header() {
   return (
-    <HeaderContainer>  
+    <HeaderContainer>
       <ContainerBody>
         <ContentTop>
           <h6>Welcome to Clicon online eCommerce store.</h6>
@@ -54,11 +55,13 @@ export function Header() {
 
             <ContentRight>
               <ButtonIdioma>
-                Eng
+                <span>Eng</span>
+                <CaretDown />
               </ButtonIdioma>
 
               <ButtonMoeda>
-                USD
+                <span>USD</span>
+                <CaretDown />
               </ButtonMoeda>
             </ContentRight>
           </ContainerHeaderRight>

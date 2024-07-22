@@ -1,3 +1,4 @@
+// arquivo de temas
 export const defaultTheme = {
   'gray-00': '#FFFFFF',
   'gray-50': '#F2F4F5',
