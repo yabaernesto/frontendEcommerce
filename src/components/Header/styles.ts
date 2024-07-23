@@ -70,10 +70,38 @@ export const Button = styled.button`
   gap: .20rem;
 `;
 
-export const ButtonIdioma = styled(Button)``;
+export const ButtonIdioma = styled(Button)`
+  position: relative;
+`;
+
+export const ModalIdioma = styled.div`
+  width: 11.25rem;
+  height: 7.75rem;
+  position: absolute;
+
+  margin-top: 1.5rem;
+  margin-left: -8.5rem 0;
+  padding: 8px;
+
+  background: ${(props) => props.theme["gray-00"]};
+  border: 1px solid ${(props) => props.theme["gray-100"]};
+  border-radius: 3px;
+
+  & div {
+    color: ${(props) => props.theme["gray-600"]};
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  }
+`;
 
 export const ButtonMoeda = styled(Button)``;
-
 
 export const ContentBaixo = styled.div`
   display: flex;

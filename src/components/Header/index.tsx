@@ -22,13 +22,25 @@ import {
   DivisorContainer,
   HeaderContainer,
   IconsHeader,
+  ModalIdioma,
   SeparatorIcon
 } from "./styles";
 
 import { ContainerBody } from "../../styles/global";
 import imgLogo from "./../../../public/Logo.svg";
+import { useState } from "react";
 
 export function Header() {
+  const [isIdiomaModal, setIsIdiomaModal] = useState(false);
+
+  function openIdiomaModal() {
+    setIsIdiomaModal(true)
+  }
+
+  function closeIdiomaModal() {
+    setIsIdiomaModal(false)
+  }
+
   return (
     <HeaderContainer>
       <ContainerBody>
@@ -60,10 +72,22 @@ export function Header() {
             <SeparatorIcon />
 
             <ContentRight>
-              <ButtonIdioma>
+              <ButtonIdioma onClick={openIdiomaModal}>
                 <span>Eng</span>
                 <CaretDown size={16} />
               </ButtonIdioma>
+
+              {isIdiomaModal && (
+                <ModalIdioma>
+                  <div>
+                    <div>
+                      <img src="" alt="" />
+                      <button onClick={closeIdiomaModal}>Idioma</button>
+                    </div>
+                    <span>check</span>
+                  </div>
+                </ModalIdioma>
+              )}
 
               <ButtonMoeda>
                 <span>USD</span>

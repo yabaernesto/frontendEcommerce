@@ -25,5 +25,5 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 export const ContainerBody = styled.div`
-  margin: 0 18.75rem;
+  margin: 0 12.75rem;
 `;
