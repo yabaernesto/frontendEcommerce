@@ -53,56 +53,6 @@ export const SeparatorIcon = styled.div`
   background: ${(props) => props.theme["gray-200"]};
 `;
 
-export const ContentRight = styled.div`
-  display: flex;
-  gap: 1.5rem;
-`;
-
-export const Button = styled.button`
-  background: transparent;
-  color: white;
-  border: none;
-  cursor: pointer;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: .20rem;
-`;
-
-export const ButtonIdioma = styled(Button)`
-  position: relative;
-`;
-
-export const ModalIdioma = styled.div`
-  width: 11.25rem;
-  height: 7.75rem;
-  position: absolute;
-
-  margin-top: 1.5rem;
-  margin-left: -8.5rem 0;
-  padding: 8px;
-
-  background: ${(props) => props.theme["gray-00"]};
-  border: 1px solid ${(props) => props.theme["gray-100"]};
-  border-radius: 3px;
-
-  & div {
-    color: ${(props) => props.theme["gray-600"]};
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    button {
-      background: transparent;
-      border: none;
-      cursor: pointer;
-    }
-  }
-`;
-
-export const ButtonMoeda = styled(Button)``;
-
 export const ContentBaixo = styled.div`
   display: flex;
   justify-content: space-between;
@@ -129,6 +79,8 @@ export const ContentBaixo = styled.div`
       flex: 1;
       padding: .30rem;
       border: none;
+
+      color: ${(props) => props.theme["gray-500"]};
     }
 
     & .icon {

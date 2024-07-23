@@ -1,5 +1,4 @@
-import { 
-  CaretDown,
+import {
   FacebookLogo, 
   Heart, 
   InstagramLogo, 
@@ -13,33 +12,20 @@ import {
 } from "phosphor-react";
 
 import { 
-  ButtonIdioma,
-  ButtonMoeda,
   ContainerHeaderRight,
   ContentBaixo,
-  ContentRight,
   ContentTop,
   DivisorContainer,
   HeaderContainer,
   IconsHeader,
-  ModalIdioma,
   SeparatorIcon
 } from "./styles";
 
 import { ContainerBody } from "../../styles/global";
 import imgLogo from "./../../../public/Logo.svg";
-import { useState } from "react";
+import { Modal } from "./Modal";
 
 export function Header() {
-  const [isIdiomaModal, setIsIdiomaModal] = useState(false);
-
-  function openIdiomaModal() {
-    setIsIdiomaModal(true)
-  }
-
-  function closeIdiomaModal() {
-    setIsIdiomaModal(false)
-  }
 
   return (
     <HeaderContainer>
@@ -70,34 +56,13 @@ export function Header() {
             </IconsHeader>
 
             <SeparatorIcon />
-
-            <ContentRight>
-              <ButtonIdioma onClick={openIdiomaModal}>
-                <span>Eng</span>
-                <CaretDown size={16} />
-              </ButtonIdioma>
-
-              {isIdiomaModal && (
-                <ModalIdioma>
-                  <div>
-                    <div>
-                      <img src="" alt="" />
-                      <button onClick={closeIdiomaModal}>Idioma</button>
-                    </div>
-                    <span>check</span>
-                  </div>
-                </ModalIdioma>
-              )}
-
-              <ButtonMoeda>
-                <span>USD</span>
-                <CaretDown size={16} />
-              </ButtonMoeda>
-            </ContentRight>
+            <Modal />
           </ContainerHeaderRight>
         </ContentTop>
       </ContainerBody>
+      
       <DivisorContainer />
+
       <ContainerBody>
         <ContentBaixo>
           <img src={imgLogo} alt="Logo do ecommerce" />
