@@ -43,6 +43,12 @@ const ButtonModal = styled.div`
       justify-content: space-between;
       align-items: center;
       gap: 1rem;
+
+      img {
+        height: 1.25rem;
+        width: 1.25rem;
+        border-radius: 50%;
+      }
     }
 
     button {
